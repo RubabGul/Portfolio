@@ -71,13 +71,6 @@ body {
 .navbar-toggler{
   float: inline-end;
 }
-@media (max-width:991px){
-  .navbar{
-      float: right;
-      z-index: 500;
-      display: block;
-  }
-}
 
 /* ABOUT */
 #about{
@@ -117,20 +110,17 @@ body {
 
 
                                             /* TESTIMONIALS */
-   .testimonials{
-     height: 100%;
-   }
    .testimonial-imagee{
-    width: 110%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
   }
   .testimonial-image{
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
   }
 
                                             /* SKILLS */
-#services{
+#skills{
   background-image: linear-gradient(to right bottom, rgb(228, 166, 176), rgb(226, 226, 90));
   padding: 2% 4% 5%;
   color: white;
@@ -491,6 +481,20 @@ padding:.5%;
       transform:translateY(-10px) ;
       box-shadow: 0 20px 10px rgba(black, 0.2);
 }
+.arrow{
+  font-size: 15rem;
+  background-color: #000;
+  padding: .8rem;
+  margin-left: 1rem;
+}
+.arrow >a{
+  text-decoration: none;
+  color: white;
+}
+.arrow >a:hover{
+  text-decoration: none;
+  color: white;
+}
 
 /* SOCIAL MEDIA LINKS */
 .media-part{
@@ -555,5 +559,113 @@ padding:.5%;
   font-size: 1.7rem;
   transform: translateY(3rem);
 }
+
+                /* media queries */
+    /* navbar */
+@media (max-width:991px){
+  .navbar{
+      float: right;
+      z-index: 500;
+      display: block;
+  }
+}
+    /* work-cards */
+@media (max-width:1215px){
+    .icon{
+      position: absolute;
+      right: 13rem;
+      top: 4px;
+    }
+}
+@media (max-width:1165px){
+  .link_wrapper{
+    left: 66%;
+  } 
+  .icon{
+    position: absolute;
+    right: 8.5rem;
+    top: 4px;
+  }
+  .footer-tagline{
+    font-size: 2.3rem;
+  }
+}
+ @media (max-width:990px){
+  .link_wrapper{
+    left: 60%;
+  } 
+  .icon{
+    position: absolute;
+    right: 6.5rem;
+    top: 4px;
+  }
+  .link_wrapper >a:hover + .icon{
+    right: 25%;
+  }
+  .rubab{
+    font-size: 3rem;
+  }
+  .footer-tagline{
+    font-size: 2rem;
+  }
+}
+@media (max-width:940px){
+  .container {
+    height: 350px;
+    width: 900px;
+  }
+  /* .card-work {
+    display: flex;
+    height: 410px;
+  } */
+
+
+  /* .link_wrapper{
+    left: 60%;
+  } 
+  .icon{
+    position: absolute;
+    right: 6.5rem;
+    top: 4px;
+  }
+  .link_wrapper >a:hover + .icon{
+    right: 25%;
+  }
+  .rubab{
+    font-size: 3rem;
+  }
+  .footer-tagline{
+    font-size: 2rem;
+  } */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
